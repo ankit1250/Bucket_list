@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(to right, #EB4A70, #96277C);
+
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form_section h1 {
+            color: rgb(209, 19, 136);
+        }
+
+        .form_section {
+            display: inline;
+            width: 30%;
+            background-color: #f090d9;
+            text-align: center;
+            padding: 1em;
+            border-radius: 20px;
+        }
+
+        .form_section .row {
+            width: 80%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-top: 1.5em;
+            background-color: #f090d9;
+            border-bottom: 3px solid lightgrey;
+        }
+
+        .form_section input[type=submit] {
+            width: 80%;
+            margin-top: 1.5em;
+            background-image: linear-gradient(to right, #EB4A70, #96277C);
+            border-radius: 15px;
+            border: none;
+            height: 30px;
+            cursor: pointer;
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            letter-spacing: 2px;
+
+        }
+
+        .form_section input[type=submit]:hover {
+            background-image: linear-gradient(to right, #ca2c51, #851069);
+        }
+
+        .form_section .row:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="form_section">
+            <h1>Login</h1>
+            <form action="/login" method="POST">
+                <input type="text" class="row" placeholder="User id" name="username">
+                <input type="password" class="row" placeholder="Password" name="password">
+                <input type="submit" name="login" value="Login">
+                <h4>New User?</h4><a href="/register">Create account</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
